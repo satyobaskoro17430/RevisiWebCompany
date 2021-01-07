@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		header {background-color: orange;}
+		.mySlides {display: none;}
+
+		.slideshow-container .mySlides img{
+			width: 100%;
+			height: 80vh;
+		}
+
+		.text {
+			font-style: bold;
+			color: #fff;
+			font-size: 25px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 32px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.numberText {
+			color: #fff;
+			font-size: 12px;
+			padding: 60px 16px;
+			position: absolute;
+			top: 0;
+		}
+
+		.dot {
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active {
+			background-color: #717171;
+		}
+
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration:1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+
+		@keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+
+		@media only screen and (max-width: 300px) {
+			.text {font-size: 11px}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<p>ISHPOT KOPI</p>
+	</header>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numberText">1 / 3</div>
+			<img src="img/headphone.jpeg">
+			<div class="text">Caption Text One</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numberText">2 / 3</div>
+			<img src="img/tree.jpeg">
+			<div class="text">Caption Text Two</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numberText">3 / 3</div>
+			<img src="img/headphone.jpeg">
+			<div class="text">Caption Text Three</div>
+		</div>
+	</div>
+
+	<div>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+
+	<script type="text/javascript">
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName('mySlides');
+			var dots = document.getElementsByClassName('dot');
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex -1].style.display = "block";
+			dots[slideIndex -1].className += " active";
+			setTimeout(showSlides, 2000);
+		}
+	</script>
+</body>
+</html>

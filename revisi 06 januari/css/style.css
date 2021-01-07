@@ -1,0 +1,385 @@
+@font-face {
+	font-family: "Devant Horgen";
+	src: url("Devant Horgen.otf");
+}
+
+@font-face{
+    font-family: "PlayfairDisplay";
+    src: url('PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "PlayfairDisplay";
+}
+
+a {
+	text-decoration: none;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: #873600;
+	margin-bottom: 20px;
+}
+	
+.medsos ul li a{
+	color: white;
+}
+
+header h1 a, header div ul li a{
+	color: #ffdf01;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.medsos {
+	padding: 3px 0;
+	background: #D4AF37;
+	background: linear-gradient(to bottom, #D4AF37 0%, #C5A028 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D4AF37), color-stop(100%, #C5A028));
+	background: -webkit-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+	background: -moz-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+	background: -o-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+	background: -ms-linear-gradient(top, #D4AF37 0%, #C5A028 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D4AF37', endColorstr='#C5A028', GradientType=0);
+	border: 1px solid #B69119;
+	box-shadow: inset 0 1px 0 #E3BE46;
+	-webkit-box-shadow: inset 0 1px 0 #E3BE46;
+	-moz-box-shadow: inset 0 1px 0 #E3BE46;
+}
+
+.medsos ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+header {
+	background: black;
+	background: linear-gradient(to bottom, black 0%, #2a3235 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, #2a3235));
+	background: -webkit-linear-gradient(top, black 0%, #2a3235 100%);
+	background: -moz-linear-gradient(top, black 0%, #2a3235 100%);
+	background: -o-linear-gradient(top, black 0%, #2a3235 100%);
+	background: -ms-linear-gradient(top, black 0%, #2a3235 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#2a3235', GradientType=0);
+	border: 1px solid #B69119;
+	box-shadow: inset 0 1px 0 #E3BE46;
+	-webkit-box-shadow: inset 0 1px 0 #E3BE46;
+	-moz-box-shadow: inset 0 1px 0 #E3BE46;
+}
+
+header h1 {
+	float: left;
+	padding: 15px 0;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul {
+	float: right;
+}
+
+header ul li {
+	display: inline-block;
+}
+
+header ul li a {
+	display: block;
+	font-size: 18px;
+	margin: 25px 10px;
+	padding: 0 3px;
+    box-shadow: 1px 1px 1px black;
+    background-color: black;
+    border-radius: 5px;
+}
+
+header ul li  a:hover {
+	background-color: #D4AF37;
+	box-shadow: 1px 1px 1px #D4AF37;
+	color: black;
+}
+
+.active {
+	background-color: rgba(243, 93, 7, 0.938);
+}
+
+.banner{
+    margin: 30px;
+	height: 530px;
+    background-image: url(../img/coffeeShop.jpeg);
+    background-size: cover;
+}
+
+.banner p{
+	font-family: "Devant Horgen";
+}
+
+#mabar {
+    color: #fff;
+    font-size: 120px;
+    letter-spacing: 5px;
+    margin-left: 50px;
+	text-shadow: 2px 2px 5px black;
+}
+	
+#inIshpot {
+    margin-left: 50px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color:  orange;
+	text-shadow: 2px 2px 3px black;
+}
+
+.banner p a {
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+	font-family: "Devant Horgen";
+}
+
+#linkPesan {
+    margin-left: 50px;
+    width: 86px;
+    background-color: #873600;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px;
+    margin-top: 30px;
+	margin-bottom: 74px;
+}
+
+#garisDekor{
+    padding: 56.8px;
+    background-image: linear-gradient(transparent 0.01%, #873600);
+}
+
+.event, .menu {
+	padding:50px 0;
+}
+
+section h3 {
+	text-align: center;
+	font-size: 30px;
+	padding:20px 0;
+	color:  #148f77;
+	margin-bottom: 20px;
+}
+
+.about {
+	margin-left: 70px;
+	margin-right: 70px;
+	display: grid;
+	grid-template-columns: 50% auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.about img {
+	width: 500px;
+	display: block;
+	margin: auto;
+}
+
+.paragraf{
+	width: 430px;
+	display: block;
+	margin: auto;
+}
+
+.about p {
+	text-align: justify;
+}
+
+.information ul li {
+	font-family: 'Devant Horgen';
+	font-size: 25px;
+	padding-left: 40px;
+	letter-spacing: 1px;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color:  #148f77;
+	margin-bottom: 20px;
+}
+
+.product{
+    height: 190px;
+    display: grid; 
+	grid-template-columns: repeat(4, auto);
+    background-color: black;
+	padding-top: 20px;
+	margin-bottom: 150px;
+}
+
+.item img {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.item p {
+    width: 300px;
+    text-align: center;
+	color: white;
+	position: relative;
+	text-shadow: 2px 2px 3px #873600;
+}
+
+.menu{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 150px;
+}
+
+.gambarMenu {
+	display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.gambarMenu .fotoMenu img {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.fotoMenu {
+	border: 3px solid;
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+.fotoMenu h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.fotoMenu h4 {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fotoMenu p {
+    padding: 10px;
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: justify;
+    position: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color:  #148f77;
+	margin-bottom: 20px;
+}
+
+.event {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 150px;
+}
+
+.event h1 {
+	margin-bottom: 10px;
+}
+
+.gambarEvent {
+	display: grid;	
+    grid-template-columns: repeat(3, auto);
+}
+
+.fotoEvent{
+	display: block;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.event img{
+	display: block;
+	margin: auto;
+	width: 300px;
+}
+
+.fotoEvent h1 {
+	font-size: 20px;
+	width: 300px;
+}
+
+.fotoEvent p {
+	margin-bottom: 10px;
+	width: 300px;
+}
+
+.fotoEvent a {
+    padding: 5px;
+	position: center;
+    color: white;
+    background: #B7950B ;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.information ul {
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    display: grid; 
+    background-color: black;
+    color: white;
+    padding-left: 130px;
+    padding-right: 130px;
+    grid-template-columns: repeat(3, auto);   
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: PlayfairDisplay;
+    font-size: 17px;
+}
+
+.information ul li{
+    font-family: 'Devant Horgen';
+    font-size: 25px;
+    padding-left: 40px;
+    letter-spacing: 1px;
+}
